@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from . import views
 
 
-def handler404(req):
+def handler404(req, exception):
     return HttpResponse(status=404)
 
 urlpatterns = [
